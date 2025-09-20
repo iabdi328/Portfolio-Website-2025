@@ -1,0 +1,65 @@
+.hero-section1{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.me-photo {
+    width: 200px;             
+    height: 200px;            
+    border-radius: 50%;       
+    object-fit: cover;        
+    display: block;        
+    margin: 0 auto;           
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    transition: transform 0.3s ease; 
+}
+
+.me-photo:hover {
+    transform: scale(1.05);  /* Optional: slight zoom on hover */
+}
+
+
+
+.hero-section1 h1 {
+    margin-top: 20px;
+}
+
+.role-title{
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+    font-size: 4em;
+
+    margin-bottom: 20px;
+
+}
+
+.hero-description {
+    max-width: 800px;         
+    width: 100%;               
+    margin: 0 auto;          
+    font-size: 1.5rem;        
+    line-height: 1.5;         /* Comfortable spacing between lines */
+    color: #333;              /* Text color */
+    text-align: center;       /* Optional: center text */
+}
+
+.reach-btn{
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    transition: transform 0.3s ease; 
+}
+.reach-btn:hover {
+    transform: scale(1.05);  
+}
