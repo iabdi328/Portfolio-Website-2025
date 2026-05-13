@@ -66,4 +66,12 @@ body{
   pointer-events: none;
 }
 
+@media (max-width: 600px) {
+  .app-bg {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+}
+
 

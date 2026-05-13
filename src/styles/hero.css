@@ -75,3 +75,27 @@
 .reach-btn:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 600px) {
+  .hero-section1 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px 24px 48px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .me-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .role-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+}

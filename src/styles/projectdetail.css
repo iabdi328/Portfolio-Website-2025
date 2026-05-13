@@ -260,3 +260,42 @@
 .detail-page--themed .detail-video {
   border: 3px solid var(--accent);
 }
+
+@media (max-width: 768px) {
+  .detail-page {
+    padding: 32px 20px 80px;
+  }
+
+  .detail-title {
+    font-size: 2rem;
+  }
+
+  .detail-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .detail-gallery-img:hover {
+    transform: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .detail-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-title {
+    font-size: 1.8rem;
+  }
+}

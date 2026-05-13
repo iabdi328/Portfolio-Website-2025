@@ -34,3 +34,88 @@
 .github-logo:hover{
     transform: scale(1.05);
 }
+
+/* ── Hamburger button (hidden on desktop) ─────────────── */
+.hamburger-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        min-height: 64px;
+        position: relative;
+    }
+
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        position: fixed;
+        top: 14px;
+        right: 16px;
+        z-index: 1001;
+        width: 40px;
+        height: 40px;
+        background: #000;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .hamburger-line {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .hamburger-btn.is-open .hamburger-line:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger-btn.is-open .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-btn.is-open .hamburger-line:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .header-links {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.97);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        z-index: 1000;
+        margin: 0;
+    }
+
+    .header-links.menu-open {
+        display: flex;
+    }
+
+    .header-links li a {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .github-logo {
+        width: 40px;
+        filter: invert(1);
+    }
+
+    .resume-btn {
+        background-color: #fff !important;
+        color: #000 !important;
+        font-size: 1.3rem !important;
+    }
+}
