@@ -10,28 +10,15 @@ const Navbar = () => {
     <div className='navbar-container'>
 
         <ul className="header-links">
-          <li> <Link to="/" > About  </Link>  </li>
-          <li> <Link to="/work">Work</Link> </li>
-
-
+          <li><Link to="/">About</Link></li>
+          <li><Link to="/work">Projects</Link></li>
+          <li><Link to="/certifications">Certifications</Link></li>
           <li><a href="mailto:ismailabdi328@gmail.com">Contact</a></li>
-
-
-
-          <li>  <a href="https://github.com/iabdi328"   target="_blank"   rel="noopener noreferrer">
-          <img className='github-logo'  src={githublogo} alt="GitHub Logo" /></a>  
-          </li>
-
-          <a
-            href={resumePDF}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resume-btn"
-          >
-            Resume
-          </a>
-
-
+          <li><a href="https://www.linkedin.com/in/smail2060b3258" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/iabdi328" target="_blank" rel="noopener noreferrer">
+            <img className='github-logo' src={githublogo} alt="GitHub Logo" />
+          </a></li>
+          <li><a href={resumePDF} target="_blank" rel="noopener noreferrer" className="resume-btn">Resume</a></li>
         </ul>
 
       

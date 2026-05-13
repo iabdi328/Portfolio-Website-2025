@@ -1,65 +1,77 @@
-.hero-section1{
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.hero-bg {
+  position: relative;
+}
 
+
+.hero-section1 {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 60px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 60px 60px;
 }
 
 .me-photo {
-    width: 200px;             
-    height: 200px;            
-    border-radius: 50%;       
-    object-fit: cover;        
-    display: block;        
-    margin: 0 auto;           
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
-    transition: transform 0.3s ease; 
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
 }
 
 .me-photo:hover {
-    transform: scale(1.05);  /* Optional: slight zoom on hover */
+  transform: scale(1.03);
 }
 
-
-
-.hero-section1 h1 {
-    margin-top: 20px;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.role-title{
-    color: #000000;
-    text-transform: uppercase;
-    letter-spacing: -0.05em;
-    line-height: 0.9;
-    font-size: 4em;
+.hero-greeting {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
 
-    margin-bottom: 20px;
-
+.role-title {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  font-size: 3.5rem;
+  margin: 0;
+  color: #ffffff;
 }
 
 .hero-description {
-    max-width: 800px;         
-    width: 100%;               
-    margin: 0 auto;          
-    font-size: 1.5rem;        
-    line-height: 1.5;         /* Comfortable spacing between lines */
-    color: #333;              /* Text color */
-    text-align: center;       /* Optional: center text */
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 480px;
 }
 
-.reach-btn{
-    margin-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #000000;
-    color: white;
-    border-radius: 20px;
-    transition: transform 0.3s ease; 
+.reach-btn {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 10px 22px;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 20px;
+  font-weight: 600;
+  width: fit-content;
+  transition: transform 0.3s ease;
 }
+
 .reach-btn:hover {
-    transform: scale(1.05);  
+  transform: scale(1.05);
 }

@@ -1,0 +1,262 @@
+.detail-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 60px 100px;
+}
+
+.detail-back {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 36px;
+  transition: color 0.2s ease;
+}
+
+.detail-back:hover {
+  color: #000;
+}
+
+.detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.detail-title {
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.detail-meta {
+  font-size: 1rem;
+  color: #777;
+}
+
+.detail-nda-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background: #000;
+  border-radius: 4px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.detail-hero-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 52px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 52px;
+}
+
+.detail-gallery-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+  position: relative;
+  z-index: 0;
+}
+
+.detail-gallery-img:hover {
+  transform: scale(1.6);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.detail-video-wrapper {
+  margin-bottom: 52px;
+}
+
+.detail-video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.detail-body {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 64px;
+}
+
+.detail-section-title {
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 14px;
+  margin-top: 36px;
+}
+
+.detail-left .detail-section-title:first-child,
+.detail-right .detail-section-title:first-child {
+  margin-top: 0;
+}
+
+.detail-description {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.detail-description:last-of-type {
+  margin-bottom: 0;
+}
+
+.detail-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-features li {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #333;
+  padding-left: 20px;
+  position: relative;
+}
+
+.detail-features li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #bbb;
+}
+
+.detail-tech-group {
+  margin-bottom: 22px;
+}
+
+.detail-tech-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.detail-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.detail-tech-tag {
+  padding: 5px 14px;
+  border: 1.5px solid #000;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.detail-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.detail-link-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.detail-link-btn:hover {
+  transform: scale(1.04);
+}
+
+.detail-nda-note {
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* ── Themed page (Spartan green) ────────────────────────── */
+
+.detail-page--themed {
+  border-top: 5px solid var(--accent);
+}
+
+.detail-school-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: 20px;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+}
+
+.detail-page--themed .detail-title {
+  color: var(--accent);
+}
+
+.detail-page--themed .detail-back:hover {
+  color: var(--accent);
+}
+
+.detail-page--themed .detail-section-title {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.detail-page--themed .detail-tech-tag {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.detail-page--themed .detail-link-btn {
+  background: var(--accent);
+}
+
+.detail-page--themed .detail-link-btn:hover {
+  background: color-mix(in srgb, var(--accent) 85%, black);
+}
+
+.detail-page--themed .detail-features li::before {
+  color: var(--accent);
+}
+
+.detail-page--themed .detail-gallery-img:hover {
+  box-shadow: 0 12px 36px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.detail-page--themed .detail-video {
+  border: 3px solid var(--accent);
+}
